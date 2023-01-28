@@ -4,3 +4,123 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+.container{
+    min-height: 100vh;
+    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #e6589d, #a65fb5);
+}
+.card{
+    height: 450px;
+    width: 250px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+    margin: 0 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s;
+}
+.card:hover{
+    transform: scale(1.2);
+    z-index: 2;
+}
+.card .price{
+    height: 150px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.card:nth-child(1) .price{
+    background: linear-gradient(90deg, #7debf2, #60a4ff);
+   
+
+}
+.card:nth-child(2) .price{
+    background: linear-gradient(90deg, #a487e6, #f2bfe3);
+}
+.card:nth-child(3) .price{
+    background: linear-gradient(90deg, #3d9c6c, #9ed478);
+}
+.card .price h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+}
+.card .price h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.card .price p{
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: -10px;
+}
+.card svg{
+    position: absolute;
+    top: 110px;
+}
+.card .details{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card:nth-child(1) .details h2{
+    color: #60a4ff;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.card:nth-child(2) .details h2{
+    color: #a487e6;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.card:nth-child(3) .details h2{
+    color: #3d9c6c;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.card .details .option{
+    text-align: center;
+}
+.card .details .option h4{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.card input{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background: #bbb;
+}
+.card:nth-child(1) input:hover{
+    background: linear-gradient(90deg, #7debf2, #60a4ff);
+}
+.card:nth-child(2) input:hover{
+    background: linear-gradient(90deg, #a487e6, #f2bfe3);
+}
+.card:nth-child(3) input:hover{
+    background: linear-gradient(90deg, #3d9c6c, #9ed478);
+}
