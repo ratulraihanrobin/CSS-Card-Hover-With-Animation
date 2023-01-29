@@ -6,7 +6,6 @@
 }
 .container{
     min-height: 100vh;
-    display: grid;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,8 +36,6 @@
 }
 .card:nth-child(1) .price{
     background: linear-gradient(90deg, #7debf2, #60a4ff);
-   
-
 }
 .card:nth-child(2) .price{
     background: linear-gradient(90deg, #a487e6, #f2bfe3);
@@ -113,14 +110,32 @@
     font-size: 16px;
     font-weight: 500;
     color: #fff;
-    background: #bbb;
+    
+}
+.card:nth-child(1) input{
+    background: linear-gradient(90deg, #7debf2, #60a4ff);
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 0.4s;
+}
+.card:nth-child(2) input{
+    background: linear-gradient(90deg, #a487e6, #f2bfe3);
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 0.4s;
+}
+.card:nth-child(3) input{
+    background: linear-gradient(90deg, #3d9c6c, #9ed478);
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 0.4s;
 }
 .card:nth-child(1) input:hover{
-    background: linear-gradient(90deg, #7debf2, #60a4ff);
+    background-position: right;
 }
 .card:nth-child(2) input:hover{
-    background: linear-gradient(90deg, #a487e6, #f2bfe3);
+    background-position: right;
 }
 .card:nth-child(3) input:hover{
-    background: linear-gradient(90deg, #3d9c6c, #9ed478);
+    background-position: right;
 }
